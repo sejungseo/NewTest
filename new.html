@@ -2,22 +2,36 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 </head>
 
 <body>
+
     <script>
-        const array = prompt('입력');
-        let result = {};
-        let winner = "";
 
-        for (let index in array) {
-            let val = array[index];
-
+        function sigma(n) {
+            if (n <= 1) {
+                return n
+            }
+            return n + sigma(n - 1)
         }
+
+        let array = [1, 2, 3, 4, 5];
+        let result = array.reduce((a, c) => a + sigma(c), 0);
+        console.log(result);
+
+
+        function addElements(arr) {
+            console.log(arr);
+
+            if (arr.length === 0) {
+                return 0
+            }
+            return arr[0] + addElements(arr.slice(1));
+        }
+
+        addElements([1, 2, 3, 4]);
+
     </script>
 </body>
 
