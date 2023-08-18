@@ -6,6 +6,7 @@
 }
 h1{
     font-size: 13px;
+    color: red;
 }
 .a11y-hidden {
     clip: rect(1px, 1px, 1px, 1px);
