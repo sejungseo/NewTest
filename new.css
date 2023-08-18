@@ -4,7 +4,10 @@
     font-weight: 400;
     font-style: normal;
 }
-
+h1{
+    font-size: 13px;
+    color: red;
+}
 .a11y-hidden {
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
